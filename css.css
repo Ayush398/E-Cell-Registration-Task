@@ -1,0 +1,395 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+/*------------------------------ Navigation Bar ------------------------------*/
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #eff4fd;
+}
+
+nav {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+.logo {
+  width: 150px;
+}
+
+/*------------------------------ Home Page ------------------------------*/
+
+.name {
+  margin-left: 8%;
+  margin-top: 15%;
+}
+
+.name h1 {
+  font-size: 50px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+span {
+  color: orange;
+}
+
+.name p {
+  color: #555;
+  line-height: 22px;
+}
+
+.image {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.image img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.image:hover .shape {
+  bottom: 40px;
+}
+
+.image:hover .me {
+  left: 45%;
+}
+
+/*------------------------------ About Section ------------------------------*/
+
+.about {
+  height: 100vh;
+  background-image: url(about3.jpg);
+  padding: 50px;
+}
+
+.aboutcontent {
+  text-align: right;
+  margin-right: 250px;
+  margin-top: 80px;
+  color: white;
+}
+
+.aboutcontent h1 {
+  font-size: 60px;
+}
+
+.aboutcontent p {
+  font-size: 20px;
+}
+
+/*------------------------------ Skills Section ------------------------------*/
+
+.skill {
+  background: #dee8fa;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillimg {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.skillimg img {
+  width: 700px;
+}
+
+.skillcontent {
+  width: 100vh;
+  padding: 30px;
+}
+
+.skilltext {
+  margin-left: 100px;
+}
+
+.skillheading {
+  width: inherit;
+  text-align: center;
+  font-size: 60px;
+  color: orange;
+}
+
+.bi bi-star-fill {
+  background-color: orange;
+}
+
+/*------------------------------ Projects Section ------------------------------*/
+
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #eff4fd;
+}
+
+.projectsheading {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.projectsheading p {
+  font-size: 60px;
+  color: orange;
+}
+
+.projectscontent {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.div1 {
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.div1 h3 {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  color: orangered;
+}
+
+.div1:hover {
+  background-color: rgb(255, 186, 57);
+  transition: 0.8s;
+  color: white;
+}
+
+.button {
+  width: 130px;
+  height: 40px;
+  background-color: orangered;
+  border-radius: 5px;
+  box-shadow: 0;
+  border: 0;
+  margin-top: auto;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+/*------------------------------ Footer ------------------------------*/
+
+.footer {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  height: 250px;
+}
+
+.footernav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footernav div {
+  margin-right: 70px;
+}
+
+.footernav div a {
+  color: white;
+  text-decoration: none;
+}
+
+.footernav div a:hover {
+  color: orangered;
+}
+
+.footer h2 {
+  margin: 30px;
+}
+
+/*------------------------------ Responsive ------------------------------*/
+
+@media (max-width: 770px) {
+
+  /*--------------------- Home Section --------------------*/
+
+  .hero{
+      height: 100vh;
+  }
+
+  .aaa{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .shape{
+    width: 300px;
+    height: 200px;
+  }
+
+  .me{
+    width: 450px;
+    height: 400px;
+  }
+
+  .image img {
+    height: 480px;
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+  }
+
+  /*--------------------- About Section --------------------*/
+
+  .aboutcontent {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .aboutcontent h1 {
+    font-size: 50px;
+  }
+
+  .aboutcontent p {
+    font-size: 20px;
+  }
+
+  /*-------------------- Skills Section --------------------*/
+
+  .skillimg {
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .skillimg img {
+    width: 400px;
+  }
+
+  .skilltext {
+    margin-left: 40px;
+  }
+
+  .skillheading {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: orange;
+  }
+
+  .skilltext h2 {
+    font-size: 22px;
+  }
+
+  .skill {
+    height: auto;
+  }
+
+  /*-------------------- Project Section --------------------*/
+
+  .projects {
+    height: auto;
+  }
+
+  .projectsheading {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .projectsheading p {
+    font-size: 50px;
+    color: orange;
+  }
+
+  .div1 {
+    width: 320px;
+    height: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .div1 h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: orangered;
+  }
+
+  #project5 {
+    height: 280px;
+  }
+
+  #project4 ,#project3 {
+    height: 180px;
+  }
+
+  /*-------------------- Footer --------------------*/
+
+  .footer {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    height: 220px;
+  }
+
+  .footernav div {
+    margin-right: 15px;
+  }
+
+  .footer h2 {
+    font-size: 22px;
+  }
+
+}
